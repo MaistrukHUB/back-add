@@ -1,7 +1,6 @@
 import express from 'express'
 
 import mongoose from 'mongoose'
-import Product from './models/Product.js'
 import Shops from './models/Shops.js'
 import ShopsItems from './models/shopsItems.js'
 import Carts from './models/Carts.js'
@@ -24,7 +23,7 @@ app.use(cors({
 
 
 
-const port = 4444
+const PORT = process.env.PORT || 4444
 
 
 
@@ -56,7 +55,7 @@ app.post('/pushCart', (req, res) => {
 })
 
 
-app.listen(port, (err) => {
+app.listen(PORT, (err) => {
 	if (err) {
 		console.log(err)
 	}
