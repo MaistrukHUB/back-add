@@ -36,7 +36,7 @@ Open [http://localhost:4444](http://localhost:4444) and take a look around.
 
 
 
-## Deploy to Heroku
+## Deploy to Render
 You can also deploy this app to Render:
 
 https://render.com/
